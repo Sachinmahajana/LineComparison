@@ -21,10 +21,25 @@ namespace LineComparison
             double length = Math.Sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
             Console.WriteLine("Line length is " + length);
 
+            Console.WriteLine("Enter the value of x3 and y3");
+            int x3 = Convert.ToInt32(Console.ReadLine());
+            int y3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the value of x4 and y4");
+            int x4 = Convert.ToInt32(Console.ReadLine());
+            int y4 = Convert.ToInt32(Console.ReadLine());
 
-
-            Console.ReadLine(); 
-
+            double length2 = Math.Sqrt((x4 - x3) ^ 2 + (y4 - y3) ^ 2);
+            Console.WriteLine("Line length is " + length2);
+            
+            if (length.Equals(length2))
+            {
+                Console.WriteLine("Both line length are equal");
+            }
+            else
+            {
+                Console.WriteLine("line length are not equal");
+            }
+            Console.ReadLine();
         }
     }
 }
