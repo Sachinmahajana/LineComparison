@@ -30,15 +30,24 @@ namespace LineComparison
 
             double length2 = Math.Sqrt((x4 - x3) ^ 2 + (y4 - y3) ^ 2);
             Console.WriteLine("Line length is " + length2);
-            
+
             if (length.Equals(length2))
             {
                 Console.WriteLine("Both line length are equal");
+            }
+            else if (length.CompareTo(length2) == 1)
+            {
+                Console.WriteLine("length of line is greater than length2 of line");
+            }
+            else if (length.CompareTo(length2) == -1)
+            {
+                Console.WriteLine("length of line is less than length2 of line");
             }
             else
             {
                 Console.WriteLine("line length are not equal");
             }
+
             Console.ReadLine();
         }
     }
