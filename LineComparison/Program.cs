@@ -10,6 +10,12 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
+
+            Compare();
+            Console.ReadLine();
+        }
+        public static void Compare()
+        {
             Console.WriteLine("Welcome to Line Comparison Problem");
             Console.WriteLine("Enter the value of x1 and y1");
             int x1 = Convert.ToInt32(Console.ReadLine());
@@ -47,8 +53,7 @@ namespace LineComparison
             {
                 Console.WriteLine("line length are not equal");
             }
-
-            Console.ReadLine();
         }
+
     }
 }
